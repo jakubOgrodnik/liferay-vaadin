@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-context/portlet-application-context.xml</param-value>
+	</context-param>
+	<!--<servlet>-->
+		<!--<servlet-name>Vaadin Application Servlet</servlet-name>-->
+		<!--<servlet-class>com.vaadin.server.VaadinServlet</servlet-class>-->
+
+		<!--<init-param>-->
+			<!--<description>Vaadin UI to display</description>-->
+			<!--<param-name>UI</param-name>-->
+			<!--<param-value>com.example.AprendiendoVaadin4UI.AprendiendoVaadin4UI</param-value>-->
+		<!--</init-param>-->
+
+	<!--</servlet>-->
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>Vaadin Application Servlet</servlet-name>-->
+		<!--<url-pattern>/*</url-pattern>-->
+	<!--</servlet-mapping>-->
+	<!--<servlet>-->
+		<!--<servlet-name>Vaadin Application Servlet</servlet-name>-->
+		<!--<servlet-class>com.liferay.blade.samples.MyVaadinUI$Servlet</servlet-class>-->
+		<!--<init-param>-->
+			<!--<param-name>beanName</param-name>-->
+			<!--<param-value>MyVaadinUI</param-value>-->
+		<!--</init-param>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>Vaadin Application Servlet</servlet-name>-->
+		<!--<url-pattern>com.liferay.blade.samples.MyVaadinUI$Servlet</url-pattern>-->
+	<!--</servlet-mapping>-->
+	<!--<servlet>-->
+		<!--<servlet-name>ViewRendererServlet</servlet-name>-->
+		<!--<servlet-class>org.springframework.web.servlet.ViewRendererServlet</servlet-class>-->
+		<!--<load-on-startup>1</load-on-startup>-->
+	<!--</servlet>-->
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>ViewRendererServlet</servlet-name>-->
+		<!--<url-pattern>/WEB-INF/servlet/view</url-pattern>-->
+	<!--</servlet-mapping>-->
+	<!--<listener>-->
+		<!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+	<!--</listener>-->
+</web-app>
