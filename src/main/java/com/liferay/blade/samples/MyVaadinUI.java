@@ -3,6 +3,7 @@ package com.liferay.blade.samples;
 import javax.servlet.annotation.WebListener;
 import javax.servlet.annotation.WebServlet;
 
+import com.vaadin.osgi.liferay.VaadinLiferayPortletConfiguration;
 import com.vaadin.server.VaadinServlet;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ServiceScope;
@@ -20,16 +21,11 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-@SpringUI
-@SuppressWarnings("serial")
+//@SpringUI
+//@SuppressWarnings("serial")
 @Theme("valo")
-@Component(service = UI.class, property = {
-        "com.liferay.portlet.display-category=category.vaadin",
-        "javax.portlet.name=my.vaadin.app.app.1.0.0",
-        "javax.portlet.display-name=Tutorial Portlet",
-        "javax.portlet.security-role-ref=power-user,user",
-        "com.vaadin.osgi.liferay.portlet-ui=true"},
-        scope = ServiceScope.PROTOTYPE)
+@VaadinLiferayPortletConfiguration(name = "Vaadin.Tutorial.1", displayName = "Vaadin Tutorial App")
+@Component(service = UI.class, scope = ServiceScope.PROTOTYPE)
 public class MyVaadinUI extends UI {
 
     @WebServlet(value = "/*", asyncSupported = true)

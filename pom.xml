@@ -131,6 +131,18 @@
             <artifactId>vaadin-client-compiled</artifactId>
             <version>8.9.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-liferay-integration</artifactId>
+            <version>8.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-osgi-integration</artifactId>
+            <version>8.9.2</version>
+        </dependency>
+
+
 
         <!--<dependency>-->
 			<!--<groupId>com.vaadin</groupId>-->
