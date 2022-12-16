@@ -18,7 +18,7 @@
 		<portlet.api.version>2.0</portlet.api.version>
 		<servlet.api.version>3.1.0</servlet.api.version>
 		<spring.scope>compile</spring.scope>
-		<spring.version>4.1.9</spring.version>
+		<spring.version>5.2.20.RELEASE</spring.version>
         <vaadin.version>8.9.3</vaadin.version>
         <vaadin.plugin.version>8.9.3</vaadin.plugin.version>
     </properties>
@@ -107,7 +107,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}.RELEASE</version>
+			<version>${spring.version}</version>
 			<scope>${spring.scope}</scope>
 		</dependency>
 		<dependency>
